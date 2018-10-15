@@ -30,19 +30,19 @@ export default class CitySearch extends Component {
         <div className='row'>
           <div className='col-md-12'>
             <div className='btn-group' role='group' aria-label='Basic example'>
-              <button name='sandiego' value='San Diego' onClick={ this.handleClick } type='button' className='btn btn-primary'>San Diego</button>
-              <button name='newyork' value='New York' onClick={ this.handleClick } type='button' className='btn btn-primary'>New York</button>
-              <button name='washingtondc' value='Washington DC.' onClick={ this.handleClick } type='button' className='btn btn-primary'>Washington D.C.</button>
-              <button name='london' value='London' onClick={ this.handleClick } type='button' className='btn btn-primary'>London</button>
-              <button name='tokyo' value='Tokyo' onClick={ this.handleClick } type='button' className='btn btn-primary'>Tokyo</button>
+              <button id='sandiego' name='sandiego' value='San Diego' onClick={ this.handleClick } type='button' className='btn btn-primary'>San Diego</button>
+              <button id='newyork' name='newyork' value='New York' onClick={ this.handleClick } type='button' className='btn btn-primary'>New York</button>
+              <button id='washingtondc' name='washingtondc' value='Washington DC.' onClick={ this.handleClick } type='button' className='btn btn-primary'>Washington D.C.</button>
+              <button id='london' name='london' value='London' onClick={ this.handleClick } type='button' className='btn btn-primary'>London</button>
+              <button id='tokyo' name='tokyo' value='Tokyo' onClick={ this.handleClick } type='button' className='btn btn-primary'>Tokyo</button>
             </div>
           </div>
         </div>
         <div className='row'>
           <div className='col-md-12'>
             <form className='form-inline' onSubmit={ this.handleSubmit }>
-              <input name='city' onChange={ this.handleChange } className='form-control col-11` form-control-sm mr-3 w-75' type='text' placeholder='Search...' aria-label='Search' />
-              <button className='btn btn-md btn-primary fa fa-search col-1 col-offset-11' aria-hidden='true' type='submit' />
+              <input id='citySearchInput' name='city' onChange={ this.handleChange } className='form-control col-11` form-control-sm mr-3 w-75' type='text' placeholder='Search...' aria-label='Search' />
+              <button id='citySearchButton' className='btn btn-md btn-primary fa fa-search col-1 col-offset-11' aria-hidden='true' type='submit' />
             </form>
             <br />
           </div>

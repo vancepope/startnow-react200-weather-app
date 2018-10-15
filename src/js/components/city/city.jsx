@@ -18,55 +18,55 @@ export default class City extends Component {
             weatherIcon,
             windSpeed } = this.props;
     return (
-      <div className='card-body'>
+      <div id='cityInfo' className='card-body'>
         <div className='row'>
           <div className='col-md-12 text-center'>
-            <img src={ weatherIcon } alt={ city } />
-            <h3 className='font-weight-bold'>{ name }</h3>
-            <label htmlFor='latLong'>Lat/Long: </label>
+            <img id='img' src={ !weatherIcon ? 'img/sunny.png' : weatherIcon } alt={ city } />
+            <h3 id='name' className='font-weight-bold'>{ name }</h3>
+            <label id='latLong' htmlFor='latLong'>Lat/Long: </label>
             <div>
-              <p className='text-success' name='latLong'>{lat && `${lat}, ${long}`}</p>
+              <p id='latLongNum' className='text-success' name='latLong'>{lat && `${lat}, ${long}`}</p>
             </div>
-            <hr className='my-4' />
+            <hr id='line' className='my-4' />
           </div>
         </div>
         <div className='row'>
           <div className='col-md-4 text-center font-weight-bold'>
-            <label htmlFor='temp'>Temperature (F)</label>
+            <label id='temp' htmlFor='temp'>Temperature (F)</label>
             <div>
-              <p className='text-success' name='temp'>{temp && `${temp}F` }</p>
+              <p id='tempNum' className='text-success' name='temp'>{temp && `${temp}F` }</p>
             </div>
           </div>
           <div className='col-md-4 text-center font-weight-bold'>
-            <label htmlFor='pressure'>Pressure</label>
+            <label id='pressure' htmlFor='pressure'>Pressure</label>
             <div>
-              <p className='text-success' name='pressure'>{ pressure }</p>
+              <p id='pressureNum' className='text-success' name='pressure'>{ pressure }</p>
             </div>
           </div>
           <div className='col-md-4 text-center font-weight-bold'>
-            <label htmlFor='humidity'>Humidity</label>
+            <label id='humidity' htmlFor='humidity'>Humidity</label>
             <div>
-              <p className='text-success' name='humidity'>{humidity && `${humidity}%` }</p>
+              <p id='humidityNum' className='text-success' name='humidity'>{humidity && `${humidity}%` }</p>
             </div>
           </div>
         </div>
         <div className='row'>
           <div className='col-md-4 text-center font-weight-bold'>
-            <label htmlFor='lowestTemp'>Lowest Temp (F)</label>
+            <label id='lowestTemp' htmlFor='lowestTemp'>Lowest Temp (F)</label>
             <div>
-              <p className='text-success' name='lowestTemp'>{lowestTemp && `${lowestTemp}F` }</p>
+              <p id='lowestTempNum' className='text-success' name='lowestTemp'>{lowestTemp && `${lowestTemp}F` }</p>
             </div>
           </div>
           <div className='col-md-4 text-center font-weight-bold'>
-            <label htmlFor='highestTemp'>HighestTemp</label>
+            <label id='highestTemp' htmlFor='highestTemp'>HighestTemp</label>
             <div>
-              <p className='text-success' name='highestTemp'>{highestTemp && `${highestTemp}F` }</p>
+              <p id='highestTempNum' className='text-success' name='highestTemp'>{highestTemp && `${highestTemp}F` }</p>
             </div>
           </div>
           <div className='col-md-4 text-center font-weight-bold'>
-            <label htmlFor='windSpeed'>Wind Speed</label>
+            <label id='windSpeed' htmlFor='windSpeed'>Wind Speed</label>
             <div>
-              <p className='text-success' name='windSpeed'>{windSpeed && `${windSpeed}mph` }</p>
+              <p id='windSpeedNum' className='text-success' name='windSpeed'>{windSpeed && `${windSpeed}mph` }</p>
             </div>
           </div>
         </div>

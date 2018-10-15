@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import SearchHistoryList from '../searchHistoryList/index';
 
 export default class SearchHistory extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div className='card border-info'>
